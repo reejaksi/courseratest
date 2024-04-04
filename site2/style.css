@@ -1,65 +1,139 @@
 body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
+header {
+    background-image: url('bg4.jpg');
+    background-position: center;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 150vh;
+    text-align: center;
 
-        nav {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #444;
-        }
+}
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 15px;
-        }
+.logo {
+    width:130px; /* Adjust the size as needed */
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 875px; /* Remove default bottom margin */
+    margin-right: 1185px; /* Add margin to the right for spacing */
+    margin-left: 40px; /* Align the logo to the left */
+    position: fixed;
+}
+h1 {
+    margin: 0;
+}
 
-        nav a:hover {
-            color: #ffd700;
-        }
+nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 20px;
+    position: fixed;
 
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 0.8rem;
+}
 
-        p {
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
+nav a:hover {
+    color: #ffd700;
+}
+.welcome-section {
+    background-color: #f7f7f7; /* Light gray background */
+    padding: 0px; /* Add padding for spacing */
+}
 
-        .feature {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+.welcome-section h2 {
+    color: navy; /* Blue font color */
+    text-align: center; /* Center-align heading */
+}
 
-        .feature img {
-            max-width: 100%;
-            height: auto;
-        }
+.welcome-section p {
+    color: dimgrey; /* Yellow font color */
+    line-height: 1.6; /* Increase line height for better readability */
+}
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 70px;
+    margin-right: 50px;
+    color: black;
+
+}
+h3 {
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 50px;
+    color: black;
+
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: dimgrey;
+}
+
+#services {
+    padding: 20px; /* Add padding for spacing */
+}
+
+.service {
+    background-color: rgba(128, 128, 128, 0.15); /* Greyish 50% opacity background */
+    margin-bottom: 20px; /* Add margin for spacing between services */
+    overflow: hidden; /* Clear floats */
+    color: dimgrey;
+}
+
+.service-content {
+    display: flex; /* Use flexbox for layout */
+}
+
+.service img {
+    max-width: 50%; /* Make the image take up 50% of the container width */
+    float: left; /* Float the image to the left */
+}
+
+.service p {
+    width: 50%; /* Make the paragraph take up 50% of the container width */
+    margin: 10; /* Remove default margin */
+    padding: 0px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in the width */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 20;
+    text-align: center;
+    border-top-width: 20px;
+}
+
+footer {
+    background-color: navy;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+}
